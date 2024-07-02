@@ -46,7 +46,7 @@ def find_longest_path(edges):
         path.pop()
 
     longest_path_info = {'path': [], 'max_distance': 0}
-    
+    #各ノードを総経路の始点としてdfsを実行
     for node in graph:
         dfs(node, set(), [], 0, longest_path_info)
     
